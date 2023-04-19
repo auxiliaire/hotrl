@@ -11,6 +11,8 @@ One can outsource parts of a web application into shared libraries that compile 
 How to compile the example?
 
 `gcc -c greet_controller.c -fPIC -o greet_controller.o`
+
 `gcc -shared greet_controller.o -o greet_controller.so`
+
 `gcc program.c -ldl -o program`
 
